@@ -25,3 +25,20 @@ body{
     background: transparent;
     box-shadow: 8px 8px 4px #909099 ,8px 8px 8px #575757;
 }
+
+.container h1{
+    font-size: 1.4rem;
+    margin-block: 8px;
+
+}
+
+.passBox{
+    background-color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 300px;
+    border-radius: 4px;
+    font-size: 20px;
+    margin-block: 8px;
+}
