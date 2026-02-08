@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
+
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -14,36 +14,59 @@
         <h1>Password Generator</h1>
 
         <div class="inputBox">
-            <input type="text" class="passBox" id="passBox" disabled>
+            <input 
+                type="text" 
+                id="passBox" 
+                class="passBox" 
+                placeholder="Your password"
+                readonly
+            >
         </div>
-        <input type="range" min="1" max="30" value="8" id="inputSlider">
+
+        <input 
+            type="range" 
+            id="inputSlider" 
+            min="1" 
+            max="30" 
+            value="8"
+        >
 
         <div class="row">
             <p>Password Length</p>
-            <span id="SliderValue"></span>
+            <span id="SliderValue">8</span>
         </div>
 
         <div class="row">
-            <label for="lowercase">Include Lowecase Letters</label>
-            <input type="checkbox" name="lowercase" id="lowercase">
+            <label for="lowercase">
+                <input type="checkbox" id="lowercase">
+                Include Lowercase Letters
+            </label>
         </div>
 
         <div class="row">
-            <label for="uppercase">Include Uppercase Letters</label>
-            <input type="checkbox" name="lowercase" id="uppercase">
+            <label for="uppercase">
+                <input type="checkbox" id="uppercase">
+                Include Uppercase Letters
+            </label>
         </div>
 
         <div class="row">
-            <label for="numbers">Include Letters</label>
-            <input type="checkbox" name="lowercase" id="numbers">
+            <label for="numbers">
+                <input type="checkbox" id="numbers">
+                Include Numbers
+            </label>
         </div>
 
         <div class="row">
-            <label for="symbols">Include Symbols</label>
-            <input type="checkbox" name="lowercase" id="symbols">
+            <label for="symbols">
+                <input type="checkbox" id="symbols">
+                Include Symbols
+            </label>
         </div>
 
-        <button type="button" class="genBtn" id="getBtn"> Generate Password</button>
+        <button type="button" id="getBtn" class="genBtn">
+            Generate Password
+        </button>
     </div>
 </body>
 </html>
