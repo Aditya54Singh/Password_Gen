@@ -49,8 +49,13 @@ body{
 
 }
 
-.row p{
+.row p, .row label{
     flex-basis: 100%;
     font-size: 18px;
+}
+
+.row input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
 }
 
